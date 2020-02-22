@@ -1,0 +1,45 @@
+body, h2, h3, h4, h5, ul, li , p{
+	margin: 0;
+	padding: 0;
+	font-family: $primary-font;
+	font-weight: $font-regular;
+}
+
+a{
+	text-decoration: none;
+	color:$blue;
+	margin:0;
+	padding:0;
+}
+
+h2{
+	font-size: $x-large;
+	color: $white;
+	font-weight: $font-bold;
+}
+
+h3{
+	font-size: $medium;
+	color: $gray;
+	font-weight: $font-bold;
+}
+
+h4{
+	font-size: $medium;
+	font-weight: $font-thin;
+	color: $white;
+	line-height: 50px;
+
+}
+
+h5{
+	font-weight: $font-regular;
+	font-size: $x-small;
+	color: $white;
+}
+
+li{
+	list-style: none;
+}
+
+

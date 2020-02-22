@@ -1,0 +1,266 @@
+.main_nav {
+	display: flex;
+	justify-content: space-between;
+	
+	&__hero{
+		background-image: url('../images/hero.jpg') ;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: bottom;
+		padding: 2em 2em;
+		height: 50vh;
+	}
+
+	&__logo{
+	width: 120px;
+	}
+
+	&__title{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding-top: 6rem;
+	}
+
+	&__item{
+		padding:.5em;
+	}
+
+	
+	&__itemlink{
+		text-decoration: none;
+		color: $white;
+		position: relative;
+		font-weight: $font-light;
+
+		&:hover {
+			&:before {
+				content: '';
+			    position: absolute;
+			    margin-top: 22px;
+			    width: 100%;
+			    height: 3px;
+			    background-color: #FFF;
+			}
+		}
+	}
+
+	&__toggle {
+	  position: absolute;
+	  padding: 1em;
+	  top: 2.2em;
+	  right: .5em;
+	  cursor: pointer;
+	}
+
+	&__hamburger, &__hamburger:after, &__hamburger:before{
+	  content: '';
+	  display: block;
+	  background: #EBEBD3;
+	  height: 3px;
+	  width: 2em;
+	  border-radius: 3px;
+	  -webkit-transition: all ease-in-out 350ms;
+	  transition: all ease-in-out 350ms;			
+	}
+
+	&__hamburger{
+		&:before{
+		  -webkit-transform: translateY(-7px);
+          transform: translateY(-7px);
+		}
+
+		&:after{
+		  -webkit-transform: translateY(4px);
+          transform: translateY(4px);
+		}
+	}
+}
+
+.open .main_nav__hamburger {
+	-webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.open .main_nav__hamburger {
+	&:before{
+		display: none;
+	}
+
+	&:after{
+		-webkit-transform: translateY(-1px) rotate(-90deg);
+          transform: translateY(-1px) rotate(-90deg);
+	}
+}
+
+nav ul.main_nav__list,{
+	display: none;
+}
+
+nav ul.opening {
+		display: block;
+		justify-content: center;
+		align-items: center;
+		background-color: $green;
+		padding: 1em 1em;
+}
+
+$tl: 0.6s; // transition length
+
+.search-box {
+  transition: width $tl, border-radius $tl, background $tl, box-shadow $tl;
+  width: 35px;height: 34px;
+  border-radius: 20px;border: none;
+  cursor: pointer;
+  background: rgb(235, 235, 235);
+  margin-right:-2em;
+  & + label .search-icon {    color: black    }
+  &:hover {
+    color: white;
+    background: rgb(200, 200, 200);
+    box-shadow: 0 0 0 5px rgb(61, 71, 82);
+    & + label .search-icon {    color: white    }
+  }
+  &:focus {
+    transition: width $tl cubic-bezier(0,1.22,.66,1.39), border-radius $tl, background $tl;
+    border: none;outline: none;
+    box-shadow: none;
+    padding-left: 10px;
+    cursor: text;
+    width: 220px;
+    border-radius: auto;
+    background: rgb(235, 235, 235);
+    color: black;
+    & + label .search-icon {    color: black;    }
+  }
+  &:not(:focus) {    text-indent:-5000px;    } // for more-graceful falling back (:not browsers likely support indent)
+}
+
+#search-submit {
+  position: relative;left: -5000px;
+}
+
+.search-icon {
+  position: relative;
+  left: -9px;
+  color: white;
+  cursor: pointer;
+}
+
+
+@media all and (min-width: 768px){
+	.main_nav {
+		display: flex;
+		justify-content: space-between;
+		
+		&__hero{
+			background-image: url('../images/hero.jpg') ;
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: bottom;
+			padding: 3em 10em;
+			height: 80vh;
+		}
+
+		&__logo{
+		width: 200px;
+		}
+
+		&__searchlink{
+			color: $white;
+			padding-right: 10px;
+		}
+
+		&__title{
+			display: flex;
+			flex-direction: column;
+			padding: 9em 0;
+		}
+
+		&__toggle {
+		  display: none;
+		}
+
+		&__menu{
+			display: flex;
+			z-index: 1;
+			justify-content: center;
+			background-color: $green;
+			padding: 1.5em 0;
+		}
+
+		&__item {
+			display: inline-block;
+			padding: 0 3.2em;
+		}
+
+		&__itemlink{
+			text-decoration: none;
+			color: $white;
+			position: relative;
+			font-weight: $font-light;
+
+			&:hover {
+				&:before {
+					content: '';
+				    position: absolute;
+				    margin-top: 22px;
+				    width: 100%;
+				    height: 3px;
+				    background-color: #FFF;
+				}
+			}
+		}
+	}
+
+	.sticky {
+	  position: sticky;
+	  top: 0;
+	  width: 100%;
+	}
+
+	nav ul.main_nav__list {
+	display: flex;
+	}
+
+	$tl: 0.6s; // transition length
+
+	.search-box {
+	  transition: width $tl, border-radius $tl, background $tl, box-shadow $tl;
+	  width: 35px;height: 34px;
+	  border-radius: 20px;border: none;
+	  cursor: pointer;
+	  background: rgb(235, 235, 235);
+	  & + label .search-icon {    color: black    }
+	  &:hover {
+	    color: white;
+	    background: rgb(200, 200, 200);
+	    box-shadow: 0 0 0 5px rgb(61, 71, 82);
+	    & + label .search-icon {    color: white    }
+	  }
+	  &:focus {
+	    transition: width $tl cubic-bezier(0,1.22,.66,1.39), border-radius $tl, background $tl;
+	    border: none;outline: none;
+	    box-shadow: none;
+	    padding-left: 15px;
+	    cursor: text;
+	    width: 300px;
+	    border-radius: auto;
+	    background: rgb(235, 235, 235);
+	    color: black;
+	    & + label .search-icon {    color: black;    }
+	  }
+	  &:not(:focus) {    text-indent:-5000px;    } // for more-graceful falling back (:not browsers likely support indent)
+	}
+
+	#search-submit {
+	  position: relative;left: -5000px;
+	}
+
+	.search-icon {
+	  position: relative;
+	  left: -10px;
+	  color: white;
+	  cursor: pointer;
+	}
+}

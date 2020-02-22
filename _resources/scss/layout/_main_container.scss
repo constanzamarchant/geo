@@ -1,0 +1,385 @@
+.main_container { 
+	&__newslist{
+	display: flex;
+	flex-direction: column;
+	padding: 0em 4em;
+	}
+
+	&__newsitem{
+		position: relative;
+		border: 1px solid silver;
+		margin:1em;
+	}
+
+	&__newsdate{
+		position: absolute;
+	    top: 160px;
+	    left: 20px;
+	    font-weight: $font-regular;
+	    font-size: $x-small;
+	    color:$white;
+	}
+
+	&__newsimg{
+		max-width: 100%;
+	}
+
+	&__newstitle{
+		padding: .6em .7em;
+	}
+
+	&__newscategory, &__newstext{
+		color: $light-gray;
+		font-weight: $font-regular;
+		font-size: $x-small;
+		padding: 2em 1.5em;
+	}
+
+	&__newstext{
+		padding-top: .5em;
+		padding-bottom: 1em;
+	}
+
+	&__newsbutton, &__newsmore{
+		padding: .7em 2em;
+		background-color: $dark-gray;
+		color:$white;
+		margin: 0 1.5em;
+		border:none;
+		border-radius: .2em;
+		font-weight: $font-regular;
+		font-size: $small;
+		margin-bottom: 1.5em;
+		cursor: pointer;
+	}
+
+	&__newsmore{
+		display: block;
+		background-color: $green;
+		margin: 2em auto;
+	}
+
+	// SINGLE NEWS
+
+	&__singlenews{
+		align-items: left;
+		padding: 1.5em;
+	}
+
+	&__news{
+		width: 100%;
+	}
+
+	&__recentsnews{
+		margin-top: 2em;
+		margin-left: 2em;
+		color: $blue;
+		font-weight: $font-bold;
+		font-size: $small;
+	}
+
+	&__recentnewstitle{
+		margin-bottom: 2em;
+		font-size: $small;
+	}
+
+	&__recentnewslist{
+		padding-top: 1em;
+	}
+
+	&__recentnewsitem{
+		line-height: 35px;
+		list-style: disc;
+		margin-left: 1em;
+	}
+
+	&__singlenewsdate{
+		padding-left: 1.5em;
+		font-size: $x-small;
+		color: $light-gray;
+	}
+
+	&__singlenewstext{
+		padding-top: 2em;
+		padding-left: 1.5em;
+		font-size: $small;
+		color: $dark-gray;
+		line-height: 25px;
+	}
+
+	&__share{
+		text-align: left;
+		padding-bottom: 2em;
+		padding-left: 3em;
+	}
+
+	&__sharetitle{
+		padding-right: .6em;
+		font-size: $small;
+		font-weight: $font-bold;
+		color: $dark-gray;
+	}
+
+	&__shareimg{
+		width: 1.2em;
+	    vertical-align: middle;
+	    padding: 0.1em;
+	}
+}
+
+@media all and (min-width: 768px){
+	.main_container {
+		&__newslist{
+		display: flex;
+		flex-direction: row;
+		padding: 2em 12em;
+		}
+
+		&__newsitem{
+			position: relative;
+			border: 1px solid silver;
+			margin:0 1em;
+			width: 33.3%;
+		}
+
+		&__newsdate{
+			position: absolute;
+		    top: 160px;
+		    left: 20px;
+		    font-weight: $font-regular;
+		    font-size: $x-small;
+		    color:$white;
+		}
+
+		&__newsimg{
+			max-width: 100%;
+		}
+
+		&__newstitle{
+			padding: .6em .7em;
+		}
+
+		&__newscategory, &__newstext{
+			padding: 0 1.5em;
+			color: $light-gray;
+			font-weight: $font-regular;
+			font-size: $x-small;
+		}
+
+		&__newstext{
+			padding-top: .5em;
+			padding-bottom: 1em;
+		}
+
+		&__newsbutton, &__newsmore{
+			padding: .7em 2em;
+			background-color: $dark-gray;
+			color:$white;
+			margin: 0 1.5em;
+			border:none;
+			border-radius: .2em;
+			font-weight: $font-regular;
+			font-size: $small;
+			margin-bottom: 1.5em;
+			cursor: pointer;
+		}
+
+		&__newsmore{
+			display: block;
+			background-color: $green;
+			margin: 2em auto;
+		}
+
+		// SINGLE NEWS
+
+		&__singlenews{
+			display: flex;
+			justify-content: space-between;
+			flex-direction: row;
+			justify-content: left;
+			align-items: left;
+			padding: 2em 12em;
+		}
+
+		&__news{
+			width: 60%;
+		}
+
+		&__recentsnews{
+			margin-top: 9em;
+			margin-left:3.5em;
+			color: $blue;
+			font-weight: $font-bold;
+			font-size: $small;
+		}
+
+		&__recentnewstitle{
+			margin-bottom: 2em;
+			font-size: $small;
+		}
+
+		&__recentnewslist{
+			padding-top: 1em;
+		}
+
+		&__recentnewsitem{
+			line-height: 35px;
+			list-style: disc;
+			margin-left: 1em;
+		}
+
+		&__singlenewsdate{
+			padding-left: 1.5em;
+			font-size: $x-small;
+			color: $light-gray;
+		}
+
+		&__singlenewstext{
+			padding-top: 2em;
+			font-size: $small;
+			color: $dark-gray;
+			line-height: 25px;
+		}
+
+		&__share{
+			text-align: center;
+			padding-bottom: 5em;
+		}
+
+		&__sharetitle{
+			padding-right: .6em;
+			font-size: $small;
+			font-weight: $font-bold;
+			color: $dark-gray;
+		}
+
+		&__shareimg{
+			width: 1.2em;
+		    vertical-align: middle;
+		    padding: 0.1em;
+		}
+		
+		// GEOGRAFIA
+
+		&__estudiosdesc{
+			padding: 3em 13em;
+			text-align: center;
+		}
+
+		&__estudiostitle{
+			padding-bottom: 1em;
+		}
+
+		&__estudiostext{
+			font-size: $small;
+			color: $dark-gray;
+			line-height: 25px;
+		}
+
+		&__estudiogrades{
+			padding:5em;
+		}
+
+		&__pregradosquare{
+			text-align: center;
+			margin-bottom:3em;
+		}
+
+		&__presquaretext, &__magsquaretext, &__becasquaretext{
+			color: $white;
+			font-weight: $font-bold;
+			font-size:$small;
+			margin-right: 3em;
+			cursor: pointer;
+		}
+
+		&__presquaretext{
+			background-color: $green-light;
+			padding: 5.3em 4em;
+		}
+
+		&__magsquaretext{
+			background-color: #1c676c;
+			padding: 5.3em 4em;
+		}
+
+		&__becasquaretext{
+			background-color: #2690b0;
+			padding: 5.3em 1em;
+		}
+		
+
+		&__pregradoimg{
+			position: relative;
+		    float: left;
+		    width: 40%;
+		}
+
+		&__pregradone{
+			background-color: #428639;
+		}
+
+		&__pregradoinfo{
+			padding: 9em 0;
+			margin-left: 40em;
+		}
+
+		&__pregradotitle{
+			font-weight: $font-bold;
+		}
+
+		&__pregradotext, &__accordiontext{
+			width: 85%;
+			font-weight: $font-light;
+			font-size: $small;
+			color: $white;
+			line-height: 25px;
+			padding-right: 3em;
+		}
+
+		&__pregradosecond{
+			display: block;
+			padding: 1em 13em;
+			background-color: $green-light;
+		}
+
+		&__accordion{
+			color: $white;
+			background-color: transparent;
+			cursor: pointer;
+			padding: 18px;
+			width: 100%;
+			border: none;
+			text-align: left;
+			outline: none;
+			font-size: 15px;
+			transition: 0.4s;
+
+			&:active, &:hover {
+				background-color: #428639;
+			}
+		}
+
+		&__panel {
+			margin-top: 1em;
+			color: $white;
+			padding: 0 18px;
+			max-height: 0;
+			overflow: hidden;
+			transition: max-height 0.2s ease-out;
+		}
+
+		&__magdesc{
+			background-color: #1c676c;
+		}
+
+		&__postdesc{
+			background-color: #2690b0;;
+		}
+	}
+.targetDiv{
+	display: none;
+}
+
+	// DOCENTES
+}

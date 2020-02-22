@@ -1,0 +1,29 @@
+.main_navdoc {
+	display: flex;
+	justify-content: space-between;
+	
+	&__hero{
+		background-image: url('../images/Equipo-Docente.jpg') ;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: bottom;
+		padding: 2em 2em;
+		height: 50vh;
+	}
+}	
+
+@media all and (min-width: 768px){
+	.main_navdoc {
+		display: flex;
+		justify-content: space-between;
+		
+		&__hero{
+			background-image: url('../images/Equipo-Docente.jpg') ;
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: bottom;
+			padding: 3em 10em;
+			height: 35vh;
+		}
+	}
+}
