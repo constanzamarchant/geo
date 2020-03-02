@@ -125,7 +125,285 @@
 	    vertical-align: middle;
 	    padding: 0.1em;
 	}
+
+	//GEOGRAFIA
+
+	&__estudiosdesc{
+			padding: 1.5em;
+			text-align: center;
+		}
+
+	&__estudiostitle{
+		padding-bottom: 1em;
+	}
+
+	&__estudiostext{
+		font-size: $small;
+		color: $dark-gray;
+		line-height: 25px;
+	}
+
+	&__estudiogrades{
+		padding:3em 0;
+	}
+
+	&__pregradosquare{
+		text-align: center;
+	}
+
+	&__presquaretext, &__magsquaretext, &__becasquaretext{
+		color: $white;
+		font-weight: $font-bold;
+		font-size: $x-small;
+		cursor: pointer;
+	}
+
+	&__presquaretext{
+		background-color: $green-light;
+		padding: 2em 2em;
+	}
+
+	&__magsquaretext{
+		background-color: #1c676c;
+		padding:2em 2em;
+	}
+
+	&__becasquaretext{
+		background-color: #2690b0;
+		padding:2em 2em;
+	}
+	
+
+	&__pregradoimg{
+		position: relative;
+	    float: left;
+	    width: 100%;
+	}
+
+	&__pregradone{
+		background-color: #428639;
+	}
+
+	&__pregradoinfo{
+		padding: 1.5em;
+	}
+
+	&__pregradotitle{
+		font-weight: $font-bold;
+	}
+
+	&__pregradotext, &__accordiontext{
+		width: 100%;
+		font-weight: $font-light;
+		font-size: $small;
+		color: $white;
+		line-height: 25px;
+	}
+
+	&__pregradosecond{
+		display: block;
+		padding: 1em 0;
+		background-color: $green-light;
+	}
+
+	&__accordion{
+		color: $white;
+		background-color: transparent;
+		cursor: pointer;
+		padding: 18px;
+		width: 100%;
+		border: none;
+		text-align: left;
+		outline: none;
+		font-size: 15px;
+		transition: 0.4s;
+
+		&:active, &:hover {
+			background-color: #428639;
+		}
+	}
+
+	&__panel {
+		margin-top: 1em;
+		color: $white;
+		padding: 0 18px;
+		max-height: 0;
+		overflow: hidden;
+		transition: max-height 0.2s ease-out;
+	}
+
+	&__magdesc{
+		background-color: #1c676c;
+	}
+
+	&__postdesc{
+		background-color: #2690b0;;
+	}
 }
+.targetDiv{
+		display: none;
+}
+
+	// DOCENTES
+	.main_container{
+		&__accordionequipo, &__accordiondoc, &__accordioncolab, &__accordionayud{
+			color: $white;
+			background-color: transparent;
+			cursor: pointer;
+			padding: 18px 0;
+			padding-left: 14em;
+			width: 100%;
+			border: none;
+			text-align: left;
+			outline: none;
+			font-weight: $font-bold;
+			font-size: 15px;
+			transition: 0.4s;
+			background-color: #2791b1;
+
+			&:active, &:hover {
+				background-color: #207b96;
+			}
+		}
+
+		&__accordioncolab{
+			background-color: #1c676c;
+
+			&:active, &:hover{
+				background-color: #17575b;
+			}
+		}
+
+		&__accordionayud{
+			background-color: #529549;
+
+			&:active, &:hover{
+				background-color: #437b3b;
+			}
+		}
+
+		&__panelequipo, &__paneldoc, &__panecolab, &__panelayud {
+			color: $white;
+			padding: 0 1.5em;
+			max-height: 0;
+			overflow: hidden;
+			transition: max-height 0.2s ease-out;
+		}
+
+		&__imgprofesor, &__imgcolab, &__imgayud{
+			width: 30%;
+			height: 30%;
+			padding: 1em 0;
+		}
+
+		&__profesor, &__colab, &__ayud{
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+		}
+
+		&__titleprof, &__titlecolab, &__titleayud{
+			display: block;
+			font-size: $small;
+			font-weight: $font-bold;
+			color: $dark-gray;
+    		flex-shrink: 0;
+    		padding-bottom: .5em;
+		}
+
+		&__textprof, &__textcolab, &__textayud{
+			font-size: $small;
+			font-weight: $font-light;
+			color: $dark-gray;
+			padding-bottom: 1em;
+		}
+
+		&__linkprof, &__linkcolab, &__linkayud{
+			font-size: $small;
+			font-weight: $font-bold;
+			color: $light-blue;
+			border:none;
+			cursor: pointer;
+			margin:0;
+			padding:0;
+		}
+	}
+
+	// INVESTIGACION
+	.main_container{
+		&__investigacion{
+			padding: 0;
+		}
+
+		&__lineas{
+			display: flex;
+			justify-content: space-between;
+			flex-direction: column;
+			padding: 1em 0;
+		}
+
+		&__tema{
+			padding-left: 1em;
+		}
+
+		&__lineatitle{
+			font-size: 18px;
+			color: $gray;
+			font-weight: $font-bold;
+			margin: 1em 0;
+		}
+
+		&__lineatxt{
+			font-size: $small;
+			color: $dark-gray;
+			line-height: 25px;
+			padding-top: 1em;
+			padding-right: 2em;
+			text-align: justify;
+		}
+
+		&__imgeofisica{
+			padding-bottom: 2em;
+		}
+	}
+
+	// ESCUELA{
+	.main_container{
+		&__escueladesc{
+			padding: 2em 1.5em;
+		}
+
+		&__esctitle{
+			padding-top: 2em;
+			text-align: center;
+		}
+
+		&__esctxt{
+			width: 100%;
+			font-size: $small;
+			color: $dark-gray;
+			line-height: 25px;
+			text-align: justify;
+			padding-right:2em;
+			padding-bottom: 1em;
+			float: left;
+		}
+
+		&__imgdir{
+			display: block;
+			width: 100%;
+			padding-bottom: 1em;
+		}
+
+		&__itemdir{
+			font-size: $small;
+			color: $dark-gray;
+
+			&--bold{
+				font-weight: $font-bold;
+			}
+		}
+	}
 
 @media all and (min-width: 768px){
 	.main_container {
@@ -382,4 +660,162 @@
 }
 
 	// DOCENTES
+	.main_container{
+		&__accordionequipo, &__accordiondoc, &__accordioncolab, &__accordionayud{
+			color: $white;
+			background-color: transparent;
+			cursor: pointer;
+			padding: 18px 0;
+			padding-left: 14em;
+			width: 100%;
+			border: none;
+			text-align: left;
+			outline: none;
+			font-weight: $font-bold;
+			font-size: 15px;
+			transition: 0.4s;
+			background-color: #2791b1;
+
+			&:active, &:hover {
+				background-color: #207b96;
+			}
+		}
+
+		&__accordioncolab{
+			background-color: #1c676c;
+
+			&:active, &:hover{
+				background-color: #17575b;
+			}
+		}
+
+		&__accordionayud{
+			background-color: #529549;
+
+			&:active, &:hover{
+				background-color: #437b3b;
+			}
+		}
+
+		&__panelequipo, &__paneldoc, &__panecolab, &__panelayud {
+			color: $white;
+			padding: 0 13em;
+			max-height: 0;
+			overflow: hidden;
+			transition: max-height 0.2s ease-out;
+		}
+
+		&__imgprofesor, &__imgcolab, &__imgayud{
+			width: 10%;
+			padding: 2em 0;
+			display: inline-block;
+		}
+
+		&__profesor, &__colab, &__ayud{
+			display: flex;
+			justify-content: space-between;
+			flex-direction: row;
+		}
+
+		&__titleprof, &__titlecolab, &__titleayud{
+			display: block;
+			font-size: $small;
+			font-weight: $font-bold;
+			color: $dark-gray;
+    		padding: 3.5em 2em;
+    		flex-shrink: 0;
+		}
+
+		&__textprof, &__textcolab, &__textayud{
+			font-size: $small;
+			font-weight: $font-light;
+			color: $dark-gray;
+    		padding: 3.2em 0em;
+		}
+
+		&__linkprof, &__linkcolab, &__linkayud{
+			font-size: $small;
+			font-weight: $font-bold;
+			color: $light-blue;
+			border:none;
+			cursor: pointer;
+			margin:0;
+			padding:0;
+		}
+	}
+
+	// INVESTIGACION
+	.main_container{
+		&__investigacion{
+			padding: 0 13em;
+		}
+
+		&__lineas{
+			display: flex;
+			justify-content: space-between;
+			flex-direction: row;
+			padding: 2em 0;
+		}
+
+		&__tema{
+			padding-left: 1em;
+		}
+
+		&__lineatitle{
+			font-size: 18px;
+			color: $gray;
+			font-weight: $font-bold;
+			padding-bottom: 1em;
+		}
+
+		&__lineatxt{
+			font-size: $small;
+			color: $dark-gray;
+			line-height: 25px;
+			padding-top: 1em;
+			text-align: justify;
+		}
+
+		&__imgeofisica{
+			display: inline-block;
+		}
+	}
+
+	// ESCUELA{
+	.main_container{
+		&__escueladesc{
+			padding: 2em 13em;
+		}
+
+		&__esctitle{
+			padding-top: 2em;
+			text-align: center;
+		}
+
+		&__esctxt{
+			width: 50%;
+			font-size: $small;
+			color: $dark-gray;
+			line-height: 25px;
+			text-align: justify;
+			padding-right:2em;
+			padding-bottom: 1em;
+			float: left;
+		}
+
+		&__imgdir{
+			display: inline-block;
+			width: 40%;
+			padding-bottom: 0;
+		}
+
+		&__itemdir{
+			font-size: $small;
+			color: $dark-gray;
+
+			&--bold{
+				font-weight: $font-bold;
+			}
+		}
+	}
 }

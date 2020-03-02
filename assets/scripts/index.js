@@ -19,3 +19,18 @@ for (i = 0; i < acc.length; i++) {
     } 
   });
 }
+
+var acc = document.getElementsByClassName("main_container__accordionequipo");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panelequipo = this.nextElementSibling;
+    if (panelequipo.style.maxHeight) {
+      panelequipo.style.maxHeight = null;
+    } else {
+      panelequipo.style.maxHeight = panelequipo.scrollHeight + "px";
+    } 
+  });
+}

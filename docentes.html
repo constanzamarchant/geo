@@ -7,7 +7,10 @@
 	<link rel="stylesheet" href="assets/styles/style.css" />
 	<link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<link href="assets/styles/modal.css" rel="stylesheet">
 	<script src="//code.jquery.com/jquery.min.js"></script>
+	<script src="assets/scripts/modal.js"></script>
+
 
 	<!-- <link rel="shortcut icon" href="assets/ico/favicon.ico" /> -->
 	<title>Escuela de Geografía</title>
@@ -31,9 +34,9 @@
             <li class="main_nav__item"><a class="main_nav__itemlink" href="index.html#noticias">Noticias</a></li>
             <li class="main_nav__item"><a class="main_nav__itemlink" href="estudiargeo.html">Estudiar Geografía</a></li>
             <li class="main_nav__item"><a class="main_nav__itemlink" href="docentes.html">Equipo docente</a></li>
-            <li class="main_nav__item"><a class="main_nav__itemlink" href="#">Escuela</a></li>
-            <li class="main_nav__item"><a class="main_nav__itemlink" href="#">Investigación</a></li>
-            <li class="main_nav__item"><a class="main_nav__itemlink" href="#">Eventos</a></li>
+            <li class="main_nav__item"><a class="main_nav__itemlink" href="escuela.html">Escuela</a></li>
+            <li class="main_nav__item"><a class="main_nav__itemlink" href="investigacion.html">Investigación</a></li>
+            <li class="main_nav__item"><a class="main_nav__itemlink" href="events.html">Eventos</a></li>
         </ul>
     </nav>
 
@@ -47,61 +50,79 @@
 			<p class="main_container__estudiostext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non perferendis autem enim, quis quam recusandae qui quas aut quod ut placeat omnis, aperiam doloremque nostrum quibusdam sed doloribus minus aspernatur!</p>		
 		</div>
 		
-		<div class="main_container__pregrado targetDiv" id="div1">
-			<div class="main_container__pregradone">
-				<img class="main_container__pregradoimg" src="assets/images/estudiargeo-left.jpg" alt="">
-				<div class="main_container__pregradoinfo">
-					<h4 class="main_container__pregradotitle">Geografía</h4>
-					<p class="main_container__pregradotext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio recusandae quo ratione, totam aliquam excepturi iusto delectus quas numquam corporis ipsam dicta qui iste ducimus, hic omnis aperiam, harum voluptas. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio recusandae quo ratione, totam aliquam excepturi iusto delectus quas numquam corporis ipsam dicta qui iste ducimus, hic omnis aperiam, harum voluptas.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio recusandae quo ratione, totam aliquam excepturi iusto delectus quas numquam corporis ipsam dicta qui iste ducimus, hic omnis aperiam, harum voluptas.</p>
+		<div class="main_container__equipo">
+			<div class="main_container__docentes">
+					<button class="main_container__accordionequipo main_container__accordiondoc">Académicos [+]</button>
+					<div class="main_container__panelequipo main_container__paneldoc">
+						<div class="main_container__profesor">
+							<img class="main_container__imgprofesor" src="assets/images/profesor.png" alt="">
+							<span class="main_container__titleprof">Nombre del profesor</span>
+							<p class="main_container__accordiontext main_container__textprof">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <button class="main_container__linkprof" data-target="simpleModal_6" data-toggle="modal">Ver más</button></p>
+
+							<div id="simpleModal_6" class="modal">
+							    <div class="modal-window">
+							        <span class="close" data-dismiss="modal">&times;</span>
+							        <h3>Nombre del profesor</h3>
+							        <p class="main_container__textprof">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+							    </div>
+							</div>
+						</div>
+
+						<div class="main_container__profesor">
+							<img class="main_container__imgprofesor" src="assets/images/profesor.png" alt="">
+							<span class="main_container__titleprof">Nombre del profesor</span>
+							<p class="main_container__accordiontext main_container__textprof">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <button class="main_container__linkprof" data-target="simpleModal_6" data-toggle="modal">Ver más</button></p>
+						</div>
+
+						<div class="main_container__profesor">
+							<img class="main_container__imgprofesor" src="assets/images/profesor.png" alt="">
+							<span class="main_container__titleprof">Nombre del profesor</span>
+							<p class="main_container__accordiontext main_container__textprof">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <button class="main_container__linkprof" data-target="simpleModal_6" data-toggle="modal">Ver más</button></p>
+						</div>
+					</div>
+
+					<button class="main_container__accordionequipo main_container__accordioncolab">Colaboradores [+]</button>
+					<div class="main_container__panelequipo main_container__panelcolab">
+						<div class="main_container__colab">
+							<img class="main_container__imgcolab" src="assets/images/profesor.png" alt="">
+							<span class="main_container__titleprof">Nombre del profesor</span>
+							<p class="main_container__accordiontext main_container__textcolab">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <button class="main_container__linkprof" data-target="simpleModal_6" data-toggle="modal">Ver más</button></p>
+						</div>
+
+						<div class="main_container__colab">
+							<img class="main_container__imgcolab" src="assets/images/profesor.png" alt="">
+							<span class="main_container__titleprof">Nombre del profesor</span>
+							<p class="main_container__accordiontext main_container__textcolab">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <button class="main_container__linkprof" data-target="simpleModal_6" data-toggle="modal">Ver más</button></p>
+						</div>
+
+						<div class="main_container__colab">
+							<img class="main_container__imgcolab" src="assets/images/profesor.png" alt="">
+							<span class="main_container__titlecolab">Nombre del profesor</span>
+							<p class="main_container__accordiontext main_container__textcolab">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <button class="main_container__linkprof" data-target="simpleModal_6" data-toggle="modal">Ver más</button></p>
+						</div>
+					</div>
+
+					<button class="main_container__accordionequipo main_container__accordionayud">Ayudantes [+]</button>
+					<div class="main_container__panelequipo main_container__panelayud">
+						<div class="main_container__ayud">
+							<img class="main_container__imgayud" src="assets/images/profesor.png" alt="">
+							<span class="main_container__titleayud">Nombre del profesor</span>
+							<p class="main_container__accordiontext main_container__textayud">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <button class="main_container__linkprof" data-target="simpleModal_6" data-toggle="modal">Ver más</button></p>
+						</div>
+
+						<div class="main_container__ayud">
+							<img class="main_container__imgayud" src="assets/images/profesor.png" alt="">
+							<span class="main_container__titleayud">Nombre del profesor</span>
+							<p class="main_container__accordiontext main_container__textayud">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <button class="main_container__linkprof" data-target="simpleModal_6" data-toggle="modal">Ver más</button></p>
+						</div>
+
+						<div class="main_container__ayud">
+							<img class="main_container__imgayud" src="assets/images/profesor.png" alt="">
+							<span class="main_container__titleayud">Nombre del profesor</span>
+							<p class="main_container__accordiontext main_container__textayud">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <button class="main_container__linkprof" data-target="simpleModal_6" data-toggle="modal">Ver más</button></p>
+						</div>
+					</div>
 				</div>
-
-				<div class="main_container__pregradosecond">
-					<button class="main_container__accordion">> Requisitos [+]</button>
-					<div class="main_container__panel">
-					  <p class="main_container__accordiontext">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-					</div>
-
-					<button class="main_container__accordion">> Malla curricular [+]</button>
-					<div class="main_container__panel">
-					  <p class="main_container__accordiontext">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-					</div>
-
-					<button class="main_container__accordion">> Perfil de egreso [+]</button>
-					<div class="main_container__panel">
-					  <p class="main_container__accordiontext">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-					</div>
-
-					<button class="main_container__accordion">> Infraestructura [+]</button>
-					<div class="main_container__panel">
-					  <p class="main_container__accordiontext">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-					</div>
-
-					<button class="main_container__accordion">> Trabajo de campo [+]</button>
-					<div class="main_container__panel">
-					  <p class="main_container__accordiontext">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="main_container__magister targetDiv" id="div2">
-			<div class="main_container__magdesc">
-				<img class="main_container__pregradoimg" src="assets/images/estudiargeo-left.jpg" alt="">
-				<div class="main_container__pregradoinfo">
-					<h4 class="main_container__pregradotitle">Magister</h4>
-					<p class="main_container__pregradotext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio recusandae quo ratione, totam aliquam excepturi iusto delectus quas numquam corporis ipsam dicta qui iste ducimus, hic omnis aperiam, harum voluptas. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio recusandae quo ratione, totam aliquam excepturi iusto delectus quas numquam corporis ipsam dicta qui iste ducimus, hic omnis aperiam, harum voluptas.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio recusandae quo ratione, totam aliquam excepturi iusto delectus quas numquam corporis ipsam dicta qui iste ducimus, hic omnis aperiam, harum voluptas.</p>
-				</div>
-			</div>
-		</div>
-
-		<div class="main_container__postulaciones targetDiv" id="div3">
-			<div class="main_container__postdesc">
-				<img class="main_container__pregradoimg" src="assets/images/estudiargeo-left.jpg" alt="">
-				<div class="main_container__pregradoinfo">
-					<h4 class="main_container__pregradotitle">Postulaciones y Becas</h4>
-					<p class="main_container__pregradotext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio recusandae quo ratione, totam aliquam excepturi iusto delectus quas numquam corporis ipsam dicta qui iste ducimus, hic omnis aperiam, harum voluptas. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio recusandae quo ratione, totam aliquam excepturi iusto delectus quas numquam corporis ipsam dicta qui iste ducimus, hic omnis aperiam, harum voluptas.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio recusandae quo ratione, totam aliquam excepturi iusto delectus quas numquam corporis ipsam dicta qui iste ducimus, hic omnis aperiam, harum voluptas.</p>
-				</div>
-			</div>
 		</div>
 
 		<div class="main_contact">
